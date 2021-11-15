@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Repairs } from './components/Repairs';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 
+//invoking the repairs function looks like defining a HTML tag
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Repairs/>
   </React.StrictMode>,
   document.getElementById('root')
 );
