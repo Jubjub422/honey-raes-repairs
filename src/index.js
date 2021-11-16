@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Repairs } from './components/Repairs';
 import './index.css';
-
+import {BrowserRouter} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
 
 //invoking the repairs function looks like defining a HTML tag
 ReactDOM.render(
   <React.StrictMode>
+    <BrowserRouter>
     <Repairs/>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
