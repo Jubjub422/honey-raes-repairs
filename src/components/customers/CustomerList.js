@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { getAllCustomers } from "../ApiManager"
 
 
 //react component html is called JSX
@@ -12,8 +13,7 @@ export const CustomerList = () => {
     //only runs when state changes, useEffect is hard coded into react
     useEffect(
         () => {
-            fetch("http://localhost:8088/customers")
-                .then(res => res.json())
+            getAllCustomers()
                 .then((customerArray) => {
                     setCustomers(customerArray)
                 })
